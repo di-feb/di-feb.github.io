@@ -1,5 +1,4 @@
 import './portofolio.scss';
-// import { IconName } from "react-icons/fa";
 
 function AboutMe() {
     return (
@@ -18,16 +17,12 @@ function AboutMe() {
                 <div className='paragraph_b'>
                     <p className='paragraph_b'>My passion lies in crafting innovative and user-friendly software solutions.</p>
                     <p className='paragraph_b'>I have honed my problem-solving skills through real-world programming challenges.</p>
-                    <p className='paragraph_b'>My experience extends to building dynamic web applications. </p>
                     <p className='paragraph_b'>Beyond the world of coding, I enjoy going to the gym, boxing, and playing chess.</p>
                 </div>
             </div>
-            <button  className='resume'> 
+            <button className='resume'>
                 <a href="https://drive.google.com/file/d/1J82VaoxR2PtpS_zVi14dR2MPIqw3nEgG/view?usp=sharing" target="_blank" className='resume_text'>Resume</a>
             </button>
-
-
-
         </div>
     )
 }
