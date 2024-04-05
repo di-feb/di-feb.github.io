@@ -1,22 +1,35 @@
 import './portofolio.scss';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { useState } from 'react';
 
 function Navbar() {
+
+    const [theme, setTheme] = useState('dark');
+
     return (
         <nav className='navbar'>
-            <a>Portfolio
+            <a href='/'>
                 <img src="logo.ico" alt="logo" className='logo' />
             </a>
-            <ul className='nav_links'>
-                <li>
-                    <a href='#about'>About</a>
-                </li>
-                <li>
-                    <a href='#projects'>Projects</a>
-                </li>
-                <li>
-                    <a href='#contact'>Contact</a>
-                </li>
-            </ul>
+            <div  className='nav_links'>
+                <a href='/' >
+                    <button className='nav_link' >About Me</button>
+                </a>
+                <a href='/' >
+                    <button className='nav_link' >Projects</button>
+                </a>
+                <a href='/' >
+                    <button className='nav_link' >Contact</button>
+                </a>
+                {theme === 'dark' ? ( 
+                    <WbSunnyIcon className='sun_icon'  onClick={() => setTheme('light')} />
+                ) : (
+                    <DarkModeIcon className='sun_icon'  onClick={() => setTheme('dark')} />
+                )}
+                
+            </div>
+
         </nav>
     );
 }
