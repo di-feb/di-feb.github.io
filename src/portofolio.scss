@@ -38,10 +38,15 @@
     /* Color of the scroll thumb on hover */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #0a192f;
     font-family: 'San Fransisco', sans-serif;
     position: relative;
+    scroll-behavior: smooth;
 
 }
 
@@ -435,7 +440,7 @@ section {
 
 .contact {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 100vh;

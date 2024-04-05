@@ -13,13 +13,13 @@ function Navbar() {
                 <img src="logo.ico" alt="logo" className='logo' />
             </a>
             <div  className='nav_links'>
-                <a href='/' >
+                <a href='#hello' >
                     <button className='nav_link' >About Me</button>
                 </a>
-                <a href='/' >
+                <a href='#projects' >
                     <button className='nav_link' >Projects</button>
                 </a>
-                <a href='/' >
+                <a href='#contact' >
                     <button className='nav_link' >Contact</button>
                 </a>
                 {theme === 'dark' ? ( 
