@@ -1,4 +1,3 @@
-import AboutMe from './Hello';
 import Navbar from './Navbar';
 import Social from './Social';
 import Projects from './Projects';
@@ -10,6 +9,11 @@ import Footer from './Footer';
 function App() {
 
     const [loading, setLoading] = useState(true);
+    const [theme, setTheme] = useState('dark');
+
+    const bodyStyle = {
+        background: theme === 'light' ? '#e6e6e6' : '#0a192f',
+    };
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -22,27 +26,26 @@ function App() {
     if (loading) {
         return (
             <div style={{position: 'relative'}}>
-                <img src="logo.ico" alt="logo" className='logo_animation' />
+                <img src="logo_dark.ico" alt="logo" className='logo_animation' />
                 <div className="shadow" />
             </div>
         );
     }
 
     return (
-        <div >
-            <Navbar />
+        <div style={bodyStyle}>
+            <Navbar onThemeChange={setTheme}/>
             <section id='hello'>
-                <Hello />
-                
+                <Hello theme={theme}/>
             </section>
             <section id='projects'>
-                <Projects />
+                <Projects theme={theme} />
             </section>
             <section id='contact'>
-                <ContactMe />
-                <Footer />
+                <ContactMe theme={theme}/>
+                <Footer theme={theme} />
             </section>
-            <Social />
+            <Social theme={theme} />
         </div>
     );
 }

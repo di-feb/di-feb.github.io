@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Footer() {
+function Footer({theme}) {
     return (
-        <footer className='footer'>
+        <footer className={`footer_${theme}`}>
             <p>© {new Date().getFullYear()} Stathis Demenagas.</p>
         </footer>
     );
