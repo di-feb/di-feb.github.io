@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/di-feb.github.io/static/css/main.3eafd855.css",
+    "main.js": "/di-feb.github.io/static/js/main.654fa0b0.js",
+    "index.html": "/di-feb.github.io/index.html",
+    "main.3eafd855.css.map": "/di-feb.github.io/static/css/main.3eafd855.css.map",
+    "main.654fa0b0.js.map": "/di-feb.github.io/static/js/main.654fa0b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3eafd855.css",
+    "static/js/main.654fa0b0.js"
+  ]
+}
