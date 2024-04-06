@@ -1,5 +1,5 @@
 {
-    "homepage": "https://di-feb.github.io/di-feb",
+    "homepage": "http://di-feb.github.io/di-feb.github.io",
     "name": "di-feb.github.io",
     "version": "0.1.0",
     "private": true,
@@ -43,5 +43,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "gh-pages": "^6.1.1"
     }
 }
