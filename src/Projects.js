@@ -47,12 +47,13 @@ function Projects({ theme }) {
             <h1 className={`project_title_text2_${theme}`}>Sneak a peak into my work!</h1>
 
 
-            <div className={`project_grid_${theme}`}>
+            <div className={`project_grid`}>
                 {currentProjects.map(project => (
                     <ProjectCard key={project.id} project={project} theme={theme} />
                 ))}
             </div>
             <Pagination
+                theme={theme}
                 totalPageCount={totalPageCount}
                 currentPage={currentPage}
                 onPageChange={handlePagination}

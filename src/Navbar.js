@@ -14,24 +14,18 @@ function Navbar({ onThemeChange }) {
     return (
         <nav className='navbar'>
             <a href='/'>
-                <img src={`logo_${theme}.ico`} alt="logo" className='logo' />
+                <img src={process.env.PUBLIC_URL + (theme === 'dark' ? '/logo_dark.ico' : '/logo_light.ico')} alt="logo" className='logo' />
             </a>
-            <div  className='nav_links'>
-                <a href='#hello' >
-                    <button className={`nav_link_${theme}`} >About</button>
-                </a>
-                <a href='#projects' >
-                    <button className={`nav_link_${theme}`} >Projects</button>
-                </a>
-                <a href='#contact' >
-                    <button className={`nav_link_${theme}`} >Contact</button>
-                </a>
-                {theme === 'dark' ? ( 
-                    <WbSunnyIcon className={`sun_icon_${theme}`}  onClick={() => handleThemeChange('light')} />
+            <div className='nav_links'>
+                <a href='#hello' className={`nav_link_${theme}`}> About </a>
+                <a href='#projects' className={`nav_link_${theme}`}> Projects </a>
+                <a href='#contact' className={`nav_link_${theme}`} > Contact </a>
+                {theme === 'dark' ? (
+                    <WbSunnyIcon className={`sun_icon_${theme}`} onClick={() => handleThemeChange('light')} />
                 ) : (
-                    <DarkModeIcon className={`sun_icon_${theme}`}  onClick={() => handleThemeChange('dark')} />
+                    <DarkModeIcon className={`sun_icon_${theme}`} onClick={() => handleThemeChange('dark')} />
                 )}
-                
+
             </div>
 
         </nav>

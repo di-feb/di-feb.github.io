@@ -2,7 +2,7 @@ import './portofolio.scss';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-function Hello({theme}) {
+function Hello({ theme }) {
 
     const [picture, setPicture] = useState([]);
 
@@ -26,7 +26,7 @@ function Hello({theme}) {
                         <span style={{ marginRight: '4px' }}> I am a final year student specializing in </span>
                         <span className={`emphasis_${theme}`} style={{ marginRight: '4px' }}> Software Engineering </span>
                         <span style={{ marginRight: '4px' }}> at the </span>
-                        <a href="http://www.di.uoa.gr" target="_blank" className={`emphasis_${theme}`}>
+                        <a href="http://www.di.uoa.gr" target="_blank" rel="noreferrer" className={`emphasis_${theme}`}>
                             DiT, Uoa.
                         </a>
                     </div>
@@ -36,9 +36,14 @@ function Hello({theme}) {
                         <p className='paragraph_b'>Beyond the world of coding, I enjoy going to the gym, boxing, and playing chess.</p>
                     </div>
                 </div>
-                <button className={`resume_${theme}`}>
-                    <a href="https://drive.google.com/file/d/1J82VaoxR2PtpS_zVi14dR2MPIqw3nEgG/view?usp=sharing" target="_blank" className={`resume_text_${theme}`}>Resume</a>
-                </button>
+                <a
+                    href="https://drive.google.com/file/d/1J82VaoxR2PtpS_zVi14dR2MPIqw3nEgG/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`resume_${theme}`}
+                >
+                    Resume
+                </a>
             </div>
             <div className={`picture_${theme}`}>
                 <img src={picture.avatar_url} alt="profile" className='profile' />

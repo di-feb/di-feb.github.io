@@ -25,24 +25,24 @@ function App() {
 
     if (loading) {
         return (
-            <div style={{position: 'relative'}}>
-                <img src="logo_dark.ico" alt="logo" className='logo_animation' />
+            <div style={{ position: 'relative' }}>
+                <img src={process.env.PUBLIC_URL + (theme === 'dark' ? '/logo_dark.ico' : '/logo_light.ico')} alt="logo" className='logo_animation' />
                 <div className="shadow" />
             </div>
         );
     }
 
     return (
-        <div style={bodyStyle}>
-            <Navbar onThemeChange={setTheme}/>
+        <div style={bodyStyle} className='app'>
+            <Navbar onThemeChange={setTheme} />
             <section id='hello'>
-                <Hello theme={theme}/>
+                <Hello theme={theme} />
             </section>
             <section id='projects'>
                 <Projects theme={theme} />
             </section>
             <section id='contact'>
-                <ContactMe theme={theme}/>
+                <ContactMe theme={theme} />
                 <Footer theme={theme} />
             </section>
             <Social theme={theme} />

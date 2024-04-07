@@ -1,4 +1,4 @@
-function Pagination({ totalPageCount, currentPage, onPageChange }) {
+function Pagination({ totalPageCount, currentPage, onPageChange, theme }) {
     const pageNumbers = [];
 
     for (let i = 1; i <= totalPageCount; i++) {
@@ -6,7 +6,7 @@ function Pagination({ totalPageCount, currentPage, onPageChange }) {
     }
 
     return (
-        <div className="pagination">
+        <div className={`pagination ${theme}`}>
             {pageNumbers.map(number => (
                 <button
                     key={number}

@@ -1,6 +1,6 @@
 import './portofolio.scss';
 
-function ContactMe({theme}) {
+function ContactMe({ theme }) {
     return (
         <div className='contact'>
             <div className='project_title'>
@@ -14,9 +14,9 @@ function ContactMe({theme}) {
                 I'm passionate about what I do and I'm always looking for new challenges and opportunities.
                 Let's turn your ideas into reality together. I'm just one message away!
             </p>
-            <button className={`resume_${theme}`}>
-                <a href="mailto:efstathiosdemenagas@gmail.com" target="_blank" className={`resume_text_${theme}`}>Say Hello!</a>
-            </button>
+
+            <a href="mailto:efstathiosdemenagas@gmail.com" target="_blank" rel="noreferrer" className={`resume_${theme}`}>Say Hello!</a>
+
         </div>
     )
 };
