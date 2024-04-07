@@ -5,13 +5,34 @@ import { useState } from 'react';
 
 function Navbar({ onThemeChange }) {
     const [theme, setTheme] = useState('dark');
+    const [navbarNewTheme, setNavbarNewTheme] = useState('old');
 
     const handleThemeChange = (newTheme) => {
         setTheme(newTheme);
         onThemeChange(newTheme);
     };
 
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Downscroll, hide navbar
+            document.querySelector('.navbar').classList.add('navbar-hidden');
+        } else if (scrollTop < lastScrollTop && this.window.scrollY > 0) {
+            // Upscroll, show navbar
+            document.querySelector('.navbar').classList.remove('navbar-hidden');
+            document.querySelector('.navbar').classList.add('navbar-new');
+        }
+        else if (this.window.scrollY === 0) {
+            // Top of the page
+            document.querySelector('.navbar').classList.remove('navbar-new');
+        }
+        lastScrollTop = scrollTop;
+    });
+
     return (
+        // <nav className={`navbar ${navbarNewTheme}`}>
         <nav className='navbar'>
             <a href='/'>
                 <img src={process.env.PUBLIC_URL + (theme === 'dark' ? '/logo_dark.ico' : '/logo_light.ico')} alt="logo" className='logo' />
