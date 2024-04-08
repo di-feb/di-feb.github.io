@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 function Navbar({ onThemeChange }) {
     const [theme, setTheme] = useState('dark');
-    const [navbarNewTheme, setNavbarNewTheme] = useState('old');
 
     const handleThemeChange = (newTheme) => {
         setTheme(newTheme);
