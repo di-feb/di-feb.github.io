@@ -22,22 +22,28 @@ function Hello({ theme }) {
                 <span className={`hello2_${theme}`}>Hello my fellow programmers, I am </span>
                 <span className={`name_${theme}`}>Stathis Demenagas</span>
                 <div className={`paragraph_${theme}`}>
-
-                    <p className='paragraph_a'>
-                        <span style={{ marginRight: '4px' }}> I am a final year student specializing in </span>
-                        <span className={`emphasis_${theme}`} style={{ marginRight: '4px' }}> Software Engineering </span>
-                        <span style={{ marginRight: '4px' }}> at the </span>
-                        <a href="http://www.di.uoa.gr" target="_blank" rel="noreferrer" className={`emphasis_${theme}`}>
+                    <p >
+                        I am a final year student specializing in
+                        <span
+                            className={`emphasis_${theme}`}
+                            style={{ marginRight: '4px', marginLeft: '4px' }}
+                        >
+                            Software Engineering
+                        </span>
+                        at the
+                        <a
+                            href="http://www.di.uoa.gr"
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`emphasis_${theme}`}
+                            style={{ marginLeft: '4px' }}
+                        >
                             DiT, Uoa.
                         </a>
+                        My passion lies in crafting innovative and user-friendly software solutions.
+                        I have honed my problem-solving skills through real-world programming challenges.
+                        Beyond the world of coding, I enjoy going to the gym, boxing, and playing chess.
                     </p>
-
-                    <div className='paragraph_b'>
-                        <p className='paragraph_b'>My passion lies in crafting innovative and user-friendly software solutions.
-                            I have honed my problem-solving skills through real-world programming challenges.
-                            Beyond the world of coding, I enjoy going to the gym, boxing, and playing chess.
-                        </p>
-                    </div>
                 </div>
                 <a
                     href="https://drive.google.com/file/d/1J82VaoxR2PtpS_zVi14dR2MPIqw3nEgG/view?usp=sharing"
