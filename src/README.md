@@ -1,22 +1,22 @@
-# 
+# Portfolio
 
-## Description
+Welcome to my portfolio! You can view it live at [di-feb.github.io](http://di-feb.github.io).
 
-This project is a web application that allows users to view and manage their software engineering projects. It includes features such as a project grid for viewing all projects, pagination for navigating through the projects, and a contact section for reaching out to the team.
+This portfolio showcases my projects and skills as a developer.  
+All the projects and images you see are directly pulled from my GitHub page.
 
-## Installation
+## Projects
 
-Describe the installation process here. If your project requires certain software to be installed or specific commands to be run, list them here.
+Each project card in the portfolio includes a brief description of the project and a link to the project's GitHub repository.  
+You can click on a project card to view more details about the project.
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/yourrepository.git
+## Images
 
-# Navigate to the project directory
-cd yourrepository
+The images you see in the portfolio are hosted on GitHub.  
+They are loaded directly from my GitHub page into the portfolio.
 
-# Install dependencies
-npm install
+## Contact
 
-# Start the project
-npm start
+If you have any questions or would like to get in touch, you can find my contact information in the portfolio.
+
+Thank you for visiting my portfolio!
