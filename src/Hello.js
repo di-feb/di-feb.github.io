@@ -17,6 +17,14 @@ function Hello({ theme }) {
         fetchProjects();
     }, []);
 
+    useEffect(() => {
+        if (picture.avatar_url) {
+            const img = new Image();
+            img.src = picture.avatar_url;
+        }
+    }, [picture]);
+
+
 
     return (
         <div className='hello'>
@@ -56,9 +64,6 @@ function Hello({ theme }) {
                     Resume
                 </a>
             </div>
-            <Helmet>
-                <link rel="preload" href={picture.avatar_url} as="image" />
-            </Helmet>
             <div className={`picture_${theme}`}>
                 <img src={picture.avatar_url} alt="profile" className='profile' />
             </div>

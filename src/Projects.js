@@ -13,7 +13,6 @@ function Projects({ theme }) {
         const fetchProjects = async () => {
             const response = await axios.get('https://api.github.com/users/di-feb/repos');
             setProjects(response.data);
-            console.log(response.data);
         };
 
         fetchProjects();
@@ -30,7 +29,6 @@ function Projects({ theme }) {
     const currentProjects = projects.slice(indexOfFirstProj, indexOfLastProj + 1);
 
     const totalPageCount = Math.ceil(projects.length / projectsPerPage);
-    console.log(totalPageCount);
 
     const handlePagination = (value) => {
         setCurrentPage(value);
