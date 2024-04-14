@@ -57,7 +57,7 @@ function Hello({ theme }) {
                         </p>
                     </div>
                     <a
-                        href="https://drive.google.com/file/d/1J82VaoxR2PtpS_zVi14dR2MPIqw3nEgG/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1_7yB0n836MVxgkL3RnLdyo4zQPgPeLo-/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
                         className={`resume_${theme}`}
