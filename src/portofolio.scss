@@ -918,6 +918,7 @@ section#contact {
     .paragraph_light {
         width: 100%;
         align-items: center;
+        text-align: center;
     }
     
 
@@ -1193,38 +1194,37 @@ section#contact {
     }
 }
 
+@media (max-width: 480px) {
+    .picture_dark {
+        width: 170px;
+        height: 170px;
+    }
+
+    .picture_light {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 440px) {
+    .picture_dark {
+        width: 160px;
+        height: 160px;
+    }
+
+    .picture_light {
+        width: 160px;
+        height: 160px;
+    }
+}
+
 @media (max-width: 400px) {
-    .picture_dark {
-        width: 180px;
-        height: 180px;
+
+    .paragraph_dark {
+        font-size: 14px;
     }
 
-    .picture_light {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media (max-width: 350px) {
-    .picture_dark {
-        width: 160px;
-        height: 160px;
-    }
-
-    .picture_light {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-@media (max-width: 330px) {
-    .picture_dark {
-        width: 140px;
-        height: 140px;
-    }
-
-    .picture_light {
-        width: 140px;
-        height: 140px;
+    .paragraph_light {
+        font-size: 14px;
     }
 }

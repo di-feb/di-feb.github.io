@@ -9,7 +9,7 @@ function Social({theme}) {
             <a href="http://www.linkedin.com/in/stathis-demenagas" target="_blank" rel="noreferrer">
                 <LinkedInIcon className={`social_icon_${theme}`} sx={{ border: '50px'}} />
             </a>
-            <a href="http://www.linkedin.com/in/stathis-demenagas" target="_blank" rel="noreferrer">
+            <a href="https://github.com/di-feb" target="_blank" rel="noreferrer">
                 <GitHubIcon className={`social_icon_${theme}`} />
             </a>
             <a href="mailto:efstathiosdemenagas@gmail.com" target="_blank" rel="noreferrer">
