@@ -31,7 +31,6 @@ function Navbar({ onThemeChange }) {
     });
 
     return (
-        // <nav className={`navbar ${navbarNewTheme}`}>
         <nav className='navbar'>
             <a href='/'>
                 <img src={process.env.PUBLIC_URL + (theme === 'dark' ? '/logo_dark.ico' : '/logo_light.ico')} alt="logo" className='logo' />
@@ -47,7 +46,6 @@ function Navbar({ onThemeChange }) {
                 )}
 
             </div>
-
         </nav>
     );
 }
