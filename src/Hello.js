@@ -1,6 +1,8 @@
 import './portofolio.scss';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+
 
 function Hello({ theme }) {
 
@@ -54,6 +56,9 @@ function Hello({ theme }) {
                     Resume
                 </a>
             </div>
+            <Helmet>
+                <link rel="preload" href={picture.avatar_url} as="image" />
+            </Helmet>
             <div className={`picture_${theme}`}>
                 <img src={picture.avatar_url} alt="profile" className='profile' />
             </div>
